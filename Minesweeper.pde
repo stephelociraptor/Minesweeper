@@ -68,6 +68,8 @@ public void displayLosingMessage()
   }
 
   String lose = "You Lose";
+  textAlign(CENTER, CENTER);
+
   for (int i = 0; i < lose.length(); i++) {
     buttons[NUM_ROWS/2][i+8].setLabel(lose.substring(i, i+1));
   }
@@ -77,6 +79,8 @@ public void displayWinningMessage()
   //your code here
   if (isWon()) {
     String win = "You Win";
+  textAlign(CENTER, CENTER);
+
     for (int i = 0; i < win.length(); i++) {
       buttons[NUM_ROWS/2][i+9].setLabel(win.substring(i, i+1));
     }
