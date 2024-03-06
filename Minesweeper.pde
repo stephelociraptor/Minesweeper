@@ -67,12 +67,21 @@ public void displayLosingMessage()
     }
   }
 
-  String lose = "You Lose";
-  textAlign(CENTER, CENTER);
+//  String lose = "You Lose";
+//  textAlign(CENTER, CENTER);
 
-  for (int i = 0; i < lose.length(); i++) {
-    buttons[NUM_ROWS/2][i+8].setLabel(lose.substring(i, i+1));
-  }
+//  for (int i = 0; i < lose.length(); i++) {
+//    buttons[NUM_ROWS/2][i+8].setLabel(lose.substring(i, i+1));
+//  }
+buttons[NUM_ROWS/2][8].setLabel("Y");
+buttons[NUM_ROWS/2][9].setLabel("o");
+buttons[NUM_ROWS/2][10].setLabel("u");
+buttons[NUM_ROWS/2][11].setLabel(" ");
+buttons[NUM_ROWS/2][12].setLabel("L");
+buttons[NUM_ROWS/2][13].setLabel("o");
+buttons[NUM_ROWS/2][14].setLabel("s");
+buttons[NUM_ROWS/2][15].setLabel("e");
+
 }
 public void displayWinningMessage()
 {
