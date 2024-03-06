@@ -143,13 +143,13 @@ public class MSButton
     } else if (countMines(myRow, myCol) > 0) {
       setLabel(countMines(myRow, myCol));
     } else {
-      for (int i = myRow - 1; i <= myRow + 1; i++) {
-        for (int j = myCol - 1; j <= myCol + 1; j++) {
-          if (isValid(i, j) && !buttons[i][j].clicked) {
+      for (int i = Math.max(0, myRow - 1); i <= Math.min(NUM_ROWS - 1, myRow + 1); i++) {
+    for (int j = Math.max(0, myCol - 1); j <= Math.min(NUM_COLS - 1, myCol + 1); j++) {
+        if (isValid(i, j) && !buttons[i][j].clicked) {
             buttons[i][j].mousePressed();
-          }
         }
-      }
+    }
+}
     
   }
 }
